@@ -4,7 +4,7 @@ Creates a QLab network cue for corresponding cues in a Nomad (EOS) show file.
 
 ## Workflow
 
-Export the Nomad cues as CSV.  (See nomad-screen-shot.png)
+Export the Nomad cues as CSV.  [(See nomad-screen-shot.png)](nomad-screen-shot.png)
 
 Open QLab and select the cue after which the network cues should be
 added.  (This will be cue 1 in a blank workspace.)
@@ -50,4 +50,3 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## Author
 
 Bunny Lushington
-January 2022
