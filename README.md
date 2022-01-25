@@ -11,6 +11,26 @@ added.  (This will be cue 1 in a blank workspace.)
 
 In Terminal run `nomad2qlab <CSV file name>`.
 
+## Notes
+
+The values associated with the network cues are opinionated in these
+ways:
+
+* The cues are highlighted in purple.
+
+* The cues target network patch 1.
+
+* The cues are named `[Nomad Cue Number] Nomad Cue Label`.
+
+* The OSC string is `/go/<nomad-cue-number>`. The "OSC Cue Recv
+  String" in Nomad should then be `/go/%1`.
+
+* The behavior is undefined with multiple cue lists.  This isn't a
+  priority for me but should be a simple tweak.
+
+* Uncalled Nomad cues (follow/hang) are still imported.
+
+These behaviors can be tweaked in the supplied Applescript code.
 
 ## Requirements
 
