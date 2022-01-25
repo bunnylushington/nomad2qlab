@@ -1,10 +1,10 @@
-* nomad2qlab
+# nomad2qlab
 
 Creates a QLab network cue for corresponding cues in a Nomad (EOS) show file.
 
-** Workflow
+## Workflow
 
-Export the Nomad cues as CSV.
+Export the Nomad cues as CSV.  (See nomad-screen-shot.png)
 
 Open QLab and select the cue after which the network cues should be
 added.  (This will be cue 1 in a blank workspace.)
@@ -12,7 +12,7 @@ added.  (This will be cue 1 in a blank workspace.)
 In Terminal run `nomad2qlab <CSV file name>`.
 
 
-** Requirements
+## Requirements
 
 MacOS + QLab v4
 
@@ -23,7 +23,7 @@ sudo perl -MCPAN -e 'install Text::CSV'
 ```
 
 
-** License
+## License
 
 Copyright 2022 Bunny Lushington
 
@@ -47,7 +47,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-** Author
+## Author
 
 Bunny Lushington
 January 2022
