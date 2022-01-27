@@ -6,11 +6,18 @@ use autodie;
 use Text::CSV;
 use FindBin;
 
+my ($csv_file, $start, $end) = @ARGV;
+
 my $csv = Text::CSV->new();
-open my $fh, $ARGV[0];
+open my $fh, $csv_file;
 while (my $row = $csv->getline($fh)) {
   next unless $row->[1] eq 'Cue';
   my $number = $row->[3];
+
+  if ($start and $end) {
+    next unless $number >= $start and $number <= $end
+  }
+
   my $name = $row->[6];
   print "$number: $name\n";
   `osascript $FindBin::Bin/q_import.scpt "$name" $number`;

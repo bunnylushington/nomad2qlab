@@ -1,6 +1,6 @@
 # nomad2qlab
 
-Creates a QLab network cue for corresponding cues in a Nomad (EOS) show file.
+Creates QLab network cues for corresponding cues in a Nomad (EOS) show file.
 
 ## Workflow
 
@@ -10,6 +10,15 @@ Open QLab and select the cue after which the network cues should be
 added.  (This will be cue 1 in a blank workspace.)
 
 In Terminal run `nomad2qlab <CSV file name>`.
+
+It's also possible to run
+
+``` shell
+nomad2qlab <CSV file> <start cue number> <end cue number>
+```
+
+where only cues in the range will be imported.
+
 
 ## Notes
 
